@@ -8,13 +8,16 @@
       </style>
     </head>
     <body>  
-        (function() { 
-            if (Galleria) { $("body").text('Galleria works') }
-        }());
         <div class="galleria">
             <img src="photo1.jpg">
             <img src="photo2.jpg">
             <img src="photo3.jpg">
         </div>
+        <script>
+        (function() { 
+            Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+            Galleria.run('.galleria');
+        }());
+        </script>
     </body>
 </html>
